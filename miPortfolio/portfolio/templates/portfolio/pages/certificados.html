@@ -1,0 +1,40 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+
+{% block title %}Portafolio{% endblock %}
+
+
+{% block content %}
+<h1 class="miProyecto">Certificados</h1>>
+<div class="proyectos">
+    <div class="card">
+
+        <div class="face front">
+            <img src="{% static 'portfolio/pics/ch.png' %}" class="card-img-top imgProyecto" alt="...">
+            <h5 class="title">Desarollo Web</h5>
+        </div>
+        <div class="face back">
+          <h5 class="title">Desarollo Web</h5>
+          <p class="text">Curso de desarrollo web en Coderhouse, logrando terminar en el top10.</p>
+          <a href="https://www.coderhouse.com/certificados/632882327950160024234b48" class="btnVer btn-primary">Ver certificado</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+
+        <div class="face front">
+            <img src="{% static 'portfolio/pics/itba.jpeg' %}" class="card-img-top imgProyecto" alt="...">
+            <h5 class="title">ITBANK</h5>
+        </div>
+        <div class="face back">
+          <h5 class="title">Full Stack Developer</h5>
+          <p class="text">Realizado en ITBA, becado por el banco Santander</p>
+          <a href="https://certtun.vottun.com/api/certificates/share/e193ef2a-7bf3-4fea-b967-793b807db99d/" class="btnVer btn-primary">Ver certificado</a>
+        </div>
+      </div>
+</div>
+
+{% endblock %}  

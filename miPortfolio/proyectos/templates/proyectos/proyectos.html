@@ -1,0 +1,29 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+
+{% block title %}Portafolio{% endblock %}
+
+
+{% block content %}
+<h1 class="miProyecto">Mis proyectos</h1>>
+<div class="proyectos">
+  {% for proyecto in proyecto %}
+    <div class="card">
+
+        <div class="face front">
+            <img src="{{proyecto.imagen.url}}" class="card-img-top imgProyecto" alt="...">
+            <h5 class="title">{{ proyecto.titulo }}</h5>
+        </div>
+        <div class="face back">
+          <h5 class="title">{{ proyecto.titulo }}</h5>
+          <p class="text">{{ proyecto.descripcion }}</p>
+          <a href="{{ proyecto.link }}" class="btnVer btn-primary">Ver página</a>
+        </div>
+    </div>
+    
+    {% endfor %} 
+
+    
+{% endblock %}  

@@ -1,0 +1,29 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+
+{% block title %}Portafolio{% endblock %}
+
+
+{% block content %}
+<h1 class="miProyecto">Mis certificados</h1>>
+<div class="proyectos">
+  {% for certificado in certificado %}
+    <div class="card">
+
+        <div class="face front">
+            <img src="{{certificado.imagen.url}}" class="card-img-top imgProyecto" alt="...">
+            <h5 class="title">{{ certificado.titulo }}</h5>
+        </div>
+        <div class="face back">
+          <h5 class="title">{{ certificado.titulo }}</h5>
+          <p class="text">{{ certificado.descripcion }}</p>
+          <a href="{{ certificado.link }}" class="btnVer btn-primary">Ver certificado</a>
+        </div>
+    </div>
+    
+    {% endfor %} 
+
+    
+{% endblock %}  

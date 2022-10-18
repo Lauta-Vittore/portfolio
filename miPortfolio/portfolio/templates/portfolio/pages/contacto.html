@@ -1,0 +1,93 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+
+{% block title %}Portafolio{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="container">
+    <span class="big-circle"></span>
+    <img src="{% static 'portfolio/pics/shape.png' %}" class="square" alt="" />
+    <div class="form">
+      <div class="contact-info">
+        <h1 class="title">Contactame!</h1>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          dolorum adipisci recusandae praesentium dicta!
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="{% static 'portfolio/pics/location.png' %}" class="icon" alt="" />
+            <p>Córdoba, Argentina</p>
+          </div>
+          <div class="information">
+            <img src="{% static 'portfolio/pics/email.png' %}" class="icon" alt="" />
+            <p>lautarotin@gmail.com</p>
+          </div>
+          <div class="information">
+            <img src="{% static 'portfolio/pics/phone.png' %}" class="icon" alt="" />
+            <p>+54 03541337512</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Contactame también por:</p>
+          <div class="social-icons">
+            <a href="https://wa.me/543541337512?text=Hola!%20Me%20interesar%C3%ADa%20contactarme%20contigo%20por%20un%20trabajo%20de..">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://twitter.com/lauty_vittore">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/lautyvittore/">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lautaro-vittore/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form action="https://formsubmit.co/lautarotin@gmail.com" method="POST">
+          {% csrf_token %}
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Enviar" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+{% endblock %}
