@@ -126,11 +126,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-""" EMAIL_HOST = 'localhost'
-EMAIL_PORT = 1025
-EMAIL_HOST_USER = 'lautarotin@gmail.com'
-EMAIL_HOST_PASSWORD = 'yo.lauty.'
-EMAIL_USE_TLS = True """
+
 
 import os
 # Media files
