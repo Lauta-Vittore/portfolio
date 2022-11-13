@@ -18,3 +18,4 @@ let write = srt =>{
     },120)
 }
 write('Frontend Developer')
+

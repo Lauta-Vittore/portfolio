@@ -14,16 +14,25 @@
 
         <div class="face front">
             <img src="{{proyecto.imagen.url}}" class="card-img-top imgProyecto" alt="...">
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span> 
+            </div>
             <h5 class="title">{{ proyecto.titulo }}</h5>
+            
         </div>
         <div class="face back">
           <h5 class="title">{{ proyecto.titulo }}</h5>
           <p class="text">{{ proyecto.descripcion }}</p>
-          <a href="{{ proyecto.link }}" class="btnVer btn-primary">Ver página</a>
+          <a href="{{ proyecto.linkp }}" class="btnVer btn-primary">Ver página</a>
+          <a href="{{ proyecto.linkr }}" class="btnVer btn-primary">Repositorio</a>
         </div>
     </div>
-    
     {% endfor %} 
+  </div>
+    
+    
 
     
 {% endblock %}  

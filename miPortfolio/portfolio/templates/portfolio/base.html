@@ -13,7 +13,6 @@
     <title>{% block title %}{% endblock %} | Lautaro Vittore</title>
 </head>
 <body>
-
       <div class="inicio">
         <div class="containerPortada">
             <div class="hi">
@@ -24,9 +23,9 @@
                 <img src="{% static 'portfolio/pics/yo.jpeg' %}" alt="perfil" class="fotoPerfil">     
             </div>
         </div>
-        <div class="botones">
+        <div class="botones col">
             
-            <div class="btnD">
+            <div class="btnD row-5">
                 <a href="{% url 'proyectos'%}">
                   <button class="btnPortada">Proyectos</button>
                 </a>
@@ -34,8 +33,8 @@
                     <button class="btnPortada">Sobre mí</button>
                 </a>
             </div>
-            <div class="espacio"></div>
-            <div class="btnI">
+            <div class="espacio row-2"></div>
+            <div class="btnI row-5">
                 <a href="{% url 'certificados'%}">
                     <button class="btnPortada">Certificados</button>
                 </a>
@@ -51,7 +50,15 @@
             <div id="loader"></div>
           </div>
         
-
+          <span class="text-primary text-highlight-warning">
+            <span class="js-typedjs" data-hs-typed-options="{
+                                    "strings": ["startup.", "future.", "success."],
+                                    "typeSpeed": 90,
+                                    "loop": true,
+                                    "backSpeed": 30,
+                                    "backDelay": 2500
+                                  }"></span>
+        </span>
 
       <!-- JavaScript Bundle with Popper -->
       <script src="{% static 'portfolio/js/preloader.js' %}"></script>
