@@ -6,7 +6,7 @@ from django.conf import settings
 # Create your views here.
 
 def home(request):
-    return render(request, "portfolio/base.html")
+    return render(request, "portfolio/pages/sobreMi.html")
 
 def certificados(request):
     return render(request, "portfolio/pages/certificados.html")
