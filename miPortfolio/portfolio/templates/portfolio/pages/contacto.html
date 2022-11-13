@@ -17,8 +17,7 @@
       <div class="contact-info">
         <h1 class="title">Contactame!</h1>
         <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-          dolorum adipisci recusandae praesentium dicta!
+          Por cualquier consulta, trabajo, etc. Te podes comunicar conmigo a travez de cualquier red social o llenando el siguiente formulario!
         </p>
 
         <div class="info">
@@ -61,11 +60,11 @@
 
         <form action="https://formsubmit.co/lautarotin@gmail.com" method="POST">
           {% csrf_token %}
-          <h3 class="title">Contact us</h3>
+
           <div class="input-container">
             <input type="text" name="name" class="input" />
             <label for="">Username</label>
-            <span>Username</span>
+            <span>Nombre</span>
           </div>
           <div class="input-container">
             <input type="email" name="email" class="input" />
@@ -75,12 +74,12 @@
           <div class="input-container">
             <input type="tel" name="phone" class="input" />
             <label for="">Phone</label>
-            <span>Phone</span>
+            <span>Teléfono</span>
           </div>
           <div class="input-container textarea">
             <textarea name="message" class="input"></textarea>
             <label for="">Message</label>
-            <span>Message</span>
+            <span>Mensaje</span>
           </div>
           <input type="submit" value="Enviar" class="btn" />
         </form>
